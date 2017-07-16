@@ -2,9 +2,10 @@
 title: "Reproducible Research - Project 1"
 author: "Vadim Sherman"
 date: "July 13, 2017"
-output: html_document
+output: 
+  html_document: 
+    keep_md: yes
 ---
-
 ## Loading and preprocessing the data
 
 ```{r, message=FALSE, warning=FALSE}
@@ -132,17 +133,5 @@ ggplot(Average.steps.int.type, aes(interval, avg_steps)) + geom_line() + facet_g
     xlab("5-minute interval") + ylab("Average Steps")
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
 
 
